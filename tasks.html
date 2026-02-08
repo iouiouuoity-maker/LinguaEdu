@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Задания | EduDigital</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+<header class="nav"><div class="nav-inner">
+  <div class="brand"><div class="logo"></div><div><div>EduDigital</div><div class="small">Русский язык • 7–11</div></div><span class="badge">Задания</span></div>
+  <nav class="menu">
+    <a href="index.html">Главная</a><a href="topic.html">Тема</a><a href="goals.html">Цель и задачи</a><a href="resources.html">Ресурсы</a><a href="method.html">Методика</a><a href="tasks.html">Задания</a><a href="diagnostics.html">Диагностика</a><a href="contacts.html">Контакты</a>
+  </nav>
+</div></header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Банк заданий 7–11</h1>
+    <p>Фильтр по уровню + отметки выполнения (сохраняются на устройстве).</p>
+
+    <div class="row">
+      <span class="small">Уровень:</span>
+      <select id="levelFilter" style="max-width:260px">
+        <option value="all">Показать все</option>
+        <option value="basic">Базовый</option>
+        <option value="adv">Продвинутый</option>
+        <option value="olymp">Олимпиадный</option>
+      </select>
+      <span id="progressText" class="pill"></span>
+      <button id="resetTasks" class="btn danger">Сбросить отметки</button>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card taskCard" data-level="basic">
+      <h2>7 класс • Базовый • Орфография/пунктуация</h2>
+      <ul class="list">
+        <li>Мини-диктант (8–10 предложений).</li>
+        <li>Подчеркни орфограммы, подпиши правило.</li>
+        <li>Самопроверка по Грамота.ру.</li>
+      </ul>
+      <label class="row small"><input type="checkbox" data-task-id="t7b1"> Отметить выполнено</label>
+    </div>
+
+    <div class="card taskCard" data-level="adv">
+      <h2>8 класс • Продвинутый • «Карта аргументов»</h2>
+      <ul class="list">
+        <li>Тезис автора (1 предложение).</li>
+        <li>2 аргумента из текста + 1 собственный пример.</li>
+        <li>Оформи в виде схемы/карты.</li>
+      </ul>
+      <label class="row small"><input type="checkbox" data-task-id="t8a1"> Отметить выполнено</label>
+    </div>
+
+    <div class="card taskCard" data-level="adv">
+      <h2>9 класс • Продвинутый • Связность текста</h2>
+      <ul class="list">
+        <li>Микротемы + заголовки.</li>
+        <li>5 средств связи.</li>
+        <li>Вывод 5–7 предложений.</li>
+      </ul>
+      <label class="row small"><input type="checkbox" data-task-id="t9a1"> Отметить выполнено</label>
+    </div>
+
+    <div class="card taskCard" data-level="olymp">
+      <h2>10 класс • Олимпиадный • Мини-исследование по НКРЯ</h2>
+      <ul class="list">
+        <li>Выбери слово/конструкцию (например, «однако»).</li>
+        <li>Подбери 10 примеров употребления.</li>
+        <li>Сделай анализ: значения/стиль.</li>
+        <li>Вывод: рекомендации + ошибки.</li>
+      </ul>
+      <label class="row small"><input type="checkbox" data-task-id="t10o1"> Отметить выполнено</label>
+    </div>
+
+    <div class="card taskCard" data-level="olymp">
+      <h2>11 класс • Олимпиадный • Эссе с источником</h2>
+      <ul class="list">
+        <li>Тезис → 2 аргумента → контраргумент → вывод.</li>
+        <li>Одна корректная ссылка/источник.</li>
+        <li>Самооценка по рубрике.</li>
+      </ul>
+      <label class="row small"><input type="checkbox" data-task-id="t11o1"> Отметить выполнено</label>
+    </div>
+
+    <div class="card">
+      <h2>Рубрика оценивания (кратко)</h2>
+      <table class="table">
+        <thead><tr><th>Критерий</th><th>Проверяем</th><th>Высокий уровень</th></tr></thead>
+        <tbody>
+          <tr><td>Логика</td><td>структура, связность</td><td>ясные переходы, точный вывод</td></tr>
+          <tr><td>Аргументация</td><td>доказательства</td><td>точные аргументы + примеры</td></tr>
+          <tr><td>Язык</td><td>норма, стиль</td><td>минимум ошибок</td></tr>
+          <tr><td>Источники</td><td>ссылки</td><td>релевантность и корректность</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="footer">© 2026 • EduDigital</div>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
