@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Диагностика | EduDigital</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+<header class="nav"><div class="nav-inner">
+  <div class="brand"><div class="logo"></div><div><div>EduDigital</div><div class="small">Русский язык • 7–11</div></div><span class="badge">Диагностика</span></div>
+  <nav class="menu">
+    <a href="index.html">Главная</a><a href="topic.html">Тема</a><a href="goals.html">Цель и задачи</a><a href="resources.html">Ресурсы</a><a href="method.html">Методика</a><a href="tasks.html">Задания</a><a href="diagnostics.html">Диагностика</a><a href="contacts.html">Контакты</a>
+  </nav>
+</div></header>
+
+<main class="container">
+  <section class="hero">
+    <h1>Диагностика и мониторинг</h1>
+    <p>Мини-тест (5 вопросов) + история результатов (сохранение на устройстве).</p>
+  </section>
+
+  <section class="grid">
+    <div class="card span6">
+      <h2>Данные ученика</h2>
+      <div class="row">
+        <input id="studentName" class="input" placeholder="ФИО (можно имя)"/>
+        <select id="studentGrade">
+          <option value="">Класс</option>
+          <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
+        </select>
+      </div>
+
+      <h3>Мини-тест</h3>
+      <form id="quizForm">
+        <div class="notice">
+          1) Орфографическая норма — это:
+          <div class="small">
+            <label><input type="radio" name="q1" value="a" required> интонация</label><br>
+            <label><input type="radio" name="q1" value="b"> правописание</label><br>
+            <label><input type="radio" name="q1" value="c"> темп речи</label>
+          </div>
+        </div>
+
+        <div class="notice" style="margin-top:10px">
+          2) Причастный оборот:
+          <div class="small">
+            <label><input type="radio" name="q2" value="a" required> Книга, прочитанная мной, понравилась.</label><br>
+            <label><input type="radio" name="q2" value="b"> Я люблю читать книги.</label><br>
+            <label><input type="radio" name="q2" value="c"> Мы пошли домой.</label>
+          </div>
+        </div>
+
+        <div class="notice" style="margin-top:10px">
+          3) Связность текста обеспечивает:
+          <div class="small">
+            <label><input type="radio" name="q3" value="a" required> случайные темы</label><br>
+            <label><input type="radio" name="q3" value="b"> отсутствие повторов</label><br>
+            <label><input type="radio" name="q3" value="c"> средства связи</label>
+          </div>
+        </div>
+
+        <div class="notice" style="margin-top:10px">
+          4) Публицистический стиль:
+          <div class="small">
+            <label><input type="radio" name="q4" value="a" required> формулы и вычисления</label><br>
+            <label><input type="radio" name="q4" value="b"> воздействие на читателя</label><br>
+            <label><input type="radio" name="q4" value="c"> только разговорная лексика</label>
+          </div>
+        </div>
+
+        <div class="notice" style="margin-top:10px">
+          5) «Тезис → аргумент» означает:
+          <div class="small">
+            <label><input type="radio" name="q5" value="a" required> утверждение, затем доказательства</label><br>
+            <label><input type="radio" name="q5" value="b"> сначала вывод</label><br>
+            <label><input type="radio" name="q5" value="c"> только пересказ</label>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <button class="btn secondary" type="submit">Проверить и сохранить</button>
+        </div>
+      </form>
+
+      <div id="quizResult" style="margin-top:12px"></div>
+    </div>
+
+    <div class="card span6">
+      <h2>История результатов</h2>
+      <p class="small">Показываются последние 12 записей.</p>
+      <div id="quizHistory"></div>
+      <div class="row" style="margin-top:12px">
+        <button id="clearHistory" class="btn ghost">Очистить историю</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">© 2026 • EduDigital</div>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
